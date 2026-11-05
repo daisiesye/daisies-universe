@@ -145,3 +145,82 @@ h1 {
 .visual     { left: 27%; top: 32%; }
 .wavelength { left: 56%; top: 32%; }
 .meetup     { left: 79%; top: 32%; }
+
+
+
+/* Mobile-only Four Worlds layout */
+@media (max-width: 768px) {
+
+  .doors {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 4rem 1.5rem;
+    min-height: auto;
+  }
+
+  .doors-copy {
+    text-align: center;
+  }
+
+  .doors-copy h2 {
+    font-size: clamp(3.5rem, 12vw, 5rem);
+    line-height: .95;
+  }
+
+  .knob-picker {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: auto;
+    overflow: visible;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  /* Illustration spans full width */
+  .knob-picker img {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+
+  /* Turn overlaid labels into grid buttons */
+  .knob-link {
+    position: static;
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #555;
+    border-radius: 8px;
+
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .knob-link span {
+    max-width: 100%;
+    padding: .75rem;
+    background: transparent;
+    line-height: 1.2;
+    text-shadow: none;
+    overflow-wrap: break-word;
+  }
+
+  /* Reset desktop positioning */
+  .language,
+  .visual,
+  .wavelength,
+  .meetup {
+    top: auto;
+    left: auto;
+  }
+}
