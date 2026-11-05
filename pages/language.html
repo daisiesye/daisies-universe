@@ -10,13 +10,65 @@
     h1 { margin:0; font:400 clamp(4.5rem,12vw,11rem)/.8 "EB Garamond",Garamond,serif; }
     p { max-width:28rem; margin:2rem auto; line-height:1.6; color:#aaa; }
     .back { display:inline-block; margin-top:1rem; padding-bottom:.35rem; border-bottom:1px solid #f7f4ed; color:#f7f4ed; font-size:.7rem; letter-spacing:.15em; text-transform:uppercase; text-decoration:none; }
+  
+.articles {
+  margin: 3rem auto;
+  width: min(100%, 600px);
+}
+
+.articles h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.article-list li {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #444;
+}
+
+.article-list a {
+  color: #f7f4ed;
+  text-decoration: none;
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+}
+
+.article-list a:hover {
+  color: #c9b18a;
+}
+
   </style>
 </head>
 <body>
   <main>
     <h1>World of Language</h1>
-    <p>Your writing, stories, and language work will live here.</p>
-    <a class="back" href="../index.html">← Return to My Universe</a>
+ 
+<p>A collection of my writing.</p>
+
+<section class="articles">
+  <h2>Articles</h2>
+
+  <ul class="article-list">
+    <li>
+      <a href="../articles/output.html">
+        秋天的馈赠 Autumn Giving
+      </a>
+    </li>
+  </ul>
+</section>
+
+<a class="back" href="../index.html">
+  ← Return to My Universe
+</a>
+
   </main>
 </body>
 </html>
